@@ -1,6 +1,9 @@
 # roam-autohotkey
 A series of scripts for automating Roam Research tasks on Windows.
 
+
+<a href='https://ko-fi.com/R6R622EYH' target='_blank'><img height='30' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 # Table of Contents
 
 * [Download AutoHotkey](#download-autohotkey)
