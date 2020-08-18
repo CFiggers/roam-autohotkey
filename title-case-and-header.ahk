@@ -1,26 +1,10 @@
 RepFunc(subString){
-  done := StrReplace(subString, " And ", " and ")
-  done := StrReplace(done, " As ", " as ")
-  done := StrReplace(done, " But ", " but ")
-  done := StrReplace(done, " For ", " for ")
-  done := StrReplace(done, " If ", " if ")
-  done := StrReplace(done, " Nor ", " nor ")
-  done := StrReplace(done, " Or ", " or ")
-  done := StrReplace(done, " So ", " so ")
-  done := StrReplace(done, " Yet ", " yet ")
-  done := StrReplace(done, " A ", " a ")
-  done := StrReplace(done, " An ", " an ")
-  done := StrReplace(done, " The ", " the ")
-  done := StrReplace(done, " At ", " at ")
-  done := StrReplace(done, " By ", " by ")
-  done := StrReplace(done, " In ", " in ")
-  done := StrReplace(done, " Of ", " of ")
-  done := StrReplace(done, " Off ", " off ")
-  done := StrReplace(done, " Om ", " on ")
-  done := StrReplace(done, " Per ", " per ")
-  done := StrReplace(done, " To ", " to ")
-  done := StrReplace(done, " Up ", " up ")
-  done := StrReplace(done, " Via ", " via ")
+  done := subString
+  matches := {" And ":" and "," As ":" as "," But ":" but "," For ":" for "," If ":" if "," Nor ":" nor "," Or ":" or "," So ":" so "," Yet ":" yet "," A ":" a "," An ":" an "," The ":" the "," At ":" at "," By ":" by "," In ":" in "," Of ":" of "," Off ":" off "," Om ":" on "," Per ":" per "," To ":" to "," Up ":" up "," Via ": " via "}
+
+  for what, with in matches
+    StringReplace, done, done, %what%, %with%, All
+
   return done
 }
 
