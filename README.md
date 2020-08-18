@@ -1,12 +1,16 @@
 # roam-autohotkey
 A series of scripts for automating Roam Research tasks on Windows.
 
+
+<a href='https://ko-fi.com/R6R622EYH' target='_blank'><img height='30' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 # Table of Contents
 
 * [Download AutoHotkey](#download-autohotkey)
 * Script Descriptions
     * [copy-to-roam](#copy-to-roam)
     * [youtube-timestamp](#youtube-timestamp)
+    * [title-case-and-header](#title-case-and-header)
 
 # Download AutoHotkey
 To run the scripts in this repo, you'll need to have [AutoHotkey](https://www.autohotkey.com/). See the [AutoHotkey Beginner Tutorial](https://www.autohotkey.com/docs/Tutorial.htm) for detailed steps on how to install and an overview of some basic concepts.
@@ -34,3 +38,16 @@ Works by executing the following steps:
 * Return mouse to starting position
 
 Could easily be extended to also switch from the current window (e.g. in Roam) to the window containing Youtube, grab the timestamp, automatically switch back, and automatically paste the grabbed timestamp for more Eloquent-like functionality.
+
+# [title-case-and-header](https://github.com/CFiggers/roam-autohotkey/blob/master/title-case-and-header.ahk)
+
+Corrects all punctuation to Title Case (ignoring common words per [APA Style Guidelines](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) (easy to update if you prefer a different list), and also triggers Ctrl+Alt+{1,2,3} to create header level in Roam:
+
+![gif example of title-case-and-header](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/title-case-and-header-example.gif)
+
+Three different keyboard shortcuts in use:
+* Alt+B for 1st Level Header
+* Alt+N for 2nd Level Header
+* Alt+M for 3rd Level Header
+
+All three correct capitalization. Must be in active edit mode on a block to work properly (otherwise, selects the entire Roam page and may appear to delete it--be careful and remember to Ctrl+Z if needed!).
