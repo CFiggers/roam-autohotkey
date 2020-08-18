@@ -1,6 +1,27 @@
 RepFunc(subString){
   done := subString
-  matches := {" And ":" and "," As ":" as "," But ":" but "," For ":" for "," If ":" if "," Nor ":" nor "," Or ":" or "," So ":" so "," Yet ":" yet "," A ":" a "," An ":" an "," The ":" the "," At ":" at "," By ":" by "," In ":" in "," Of ":" of "," Off ":" off "," Om ":" on "," Per ":" per "," To ":" to "," Up ":" up "," Via ": " via "}
+  matches := {" And ": " and "
+              ," As ": " as "
+              ," But ": " but "
+              ," For ": " for "
+              ," If ": " if "
+              ," Nor ": " nor "
+              ," Or ": " or "
+              ," So ": " so "
+              ," Yet ": " yet "
+              ," A ": " a "
+              ," An ": " an "
+              ," The ": " the "
+              ," At ": " at "
+              ," By ": " by "
+              ," In ": " in "
+              ," Of ": " of "
+              ," Off ": " off "
+              ," On ": " on "
+              ," Per ": " per "
+              ," To ": " to "
+              ," Up ": " up "
+              ," Via ": " via "}
 
   for what, with in matches
     StringReplace, done, done, %what%, %with%, All
