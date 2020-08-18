@@ -1,6 +1,7 @@
 # roam-autohotkey
 A series of scripts for automating Roam Research tasks on Windows.
 
+If you'd like help adapting any of these or implementing functionality of your own, feel free to reach out! I'd be happy to advise/assist.
 
 <a href='https://ko-fi.com/R6R622EYH' target='_blank'><img height='30' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
@@ -51,3 +52,11 @@ Three different keyboard shortcuts in use:
 * Alt+M for 3rd Level Header
 
 All three correct capitalization. Must be in active edit mode on a block to work properly (otherwise, selects the entire Roam page and may appear to delete it--be careful and remember to Ctrl+Z if needed!).
+
+# [bible-chapter-tagger.ahk](https://github.com/CFiggers/roam-autohotkey/blob/master/bible-chapter-tagger.ahk)
+
+I do a lot of reading related to the Christian faith. Different authors abbreviate books of the Hebrew/Christian Bible in different ways, which makes linking up all the different references to those texts time-consuming and mentally taxing. So, I wrote a RegEx and hooked it up to a keyboard shortcut to do that work for me:
+
+![gif example of bible-chapter-tagger.ahk](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/bible-chapter-tagger-example.gif)
+
+This script cuts whatever is highlighted into the Clipboard, runs two different rounds of RegEx replacement on it (first to expand abbreviations, second to add brackets), and then pastes the result back to where it originally clipped from. It's reasonably efficient (I've run it on plaintext documents containing thousands of lines) and it covers most variations I've encountered for abbreviation formatting and sentence position. If you find cases that don't work, feel welcome to submit an issue/make a PR to help me improve.
