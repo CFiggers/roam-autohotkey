@@ -1,7 +1,7 @@
 # roam-autohotkey
 A series of scripts for automating Roam Research tasks on Windows.
 
-If you'd like help adapting any of these or implementing functionality of your own, feel free to reach out! I'd be happy to advise/assist.
+If you'd like help adapting any of these or implementing new AHK functionality of your own, feel free to reach out! I'd be happy to advise/assist.
 
 <a href='https://ko-fi.com/R6R622EYH' target='_blank'><img height='30' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
@@ -12,6 +12,7 @@ If you'd like help adapting any of these or implementing functionality of your o
     * [copy-to-roam](#copy-to-roam)
     * [youtube-timestamp](#youtube-timestamp)
     * [title-case-and-header](#title-case-and-header)
+    * [bible-chapter-tagger](#bible-chapter-tagger)
 
 # Download AutoHotkey
 To run the scripts in this repo, you'll need to have [AutoHotkey](https://www.autohotkey.com/). See the [AutoHotkey Beginner Tutorial](https://www.autohotkey.com/docs/Tutorial.htm) for detailed steps on how to install and an overview of some basic concepts.
