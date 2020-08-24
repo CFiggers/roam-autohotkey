@@ -13,6 +13,7 @@ If you'd like help adapting any of these or implementing new AHK functionality o
     * [youtube-timestamp](#youtube-timestamp)
     * [title-case-and-header](#title-case-and-header)
     * [bible-chapter-tagger](#bible-chapter-tagger)
+    * [split-at-delimiter](#split-at-delimiter)
 
 # Download AutoHotkey
 To run the scripts in this repo, you'll need to have [AutoHotkey](https://www.autohotkey.com/). See the [AutoHotkey Beginner Tutorial](https://www.autohotkey.com/docs/Tutorial.htm) for detailed steps on how to install and an overview of some basic concepts.
@@ -61,3 +62,11 @@ I do a lot of reading related to the Christian faith. Different authors abbrevia
 ![gif example of bible-chapter-tagger.ahk](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/bible-chapter-tagger-example.gif)
 
 This script cuts whatever is highlighted into the Clipboard, runs two different rounds of RegEx replacement on it (first to expand abbreviations, second to add brackets), and then pastes the result back to where it originally clipped from. It's reasonably efficient (I've run it on plaintext documents containing thousands of lines) and it covers most variations I've encountered for abbreviation formatting and sentence position. If you find cases that don't work, feel welcome to submit an issue/make a PR to help me improve.
+
+# [split-at-delimiter](https://github.com/CFiggers/roam-autohotkey/blob/master/split-at-delimiter.ahk)
+
+Inspired by @CatoMinor3 in this tweet: https://twitter.com/CatoMinor3/status/1297805176296869890?s=20
+
+![gif example of split-at-delimiter](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/split-at-delimiter-example.gif)
+
+Runs a RegEx replacement to split Roam blocks (default to "-"; can be changed by updating the RegEx string). To access, hold down Ctrl+Right Click to bring up the context menu.
