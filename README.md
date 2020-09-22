@@ -14,6 +14,7 @@ If you'd like help adapting any of these or implementing new AHK functionality o
     * [title-case-and-header](#title-case-and-header)
     * [bible-chapter-tagger](#bible-chapter-tagger)
     * [split-at-delimiter](#split-at-delimiter)
+    * [shorthand-expander](#shorthand-expander)
 
 # Download AutoHotkey
 To run the scripts in this repo, you'll need to have [AutoHotkey](https://www.autohotkey.com/). See the [AutoHotkey Beginner Tutorial](https://www.autohotkey.com/docs/Tutorial.htm) for detailed steps on how to install and an overview of some basic concepts.
