@@ -14,6 +14,7 @@ If you'd like help adapting any of these or implementing new AHK functionality o
     * [title-case-and-header](#title-case-and-header)
     * [bible-chapter-tagger](#bible-chapter-tagger)
     * [split-at-delimiter](#split-at-delimiter)
+    * [shorthand-expander](#shorthand-expander)
 
 # Download AutoHotkey
 To run the scripts in this repo, you'll need to have [AutoHotkey](https://www.autohotkey.com/). See the [AutoHotkey Beginner Tutorial](https://www.autohotkey.com/docs/Tutorial.htm) for detailed steps on how to install and an overview of some basic concepts.
@@ -70,3 +71,16 @@ Inspired by @CatoMinor3 in this tweet: https://twitter.com/CatoMinor3/status/129
 ![gif example of split-at-delimiter](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/split-at-delimiter-example.gif)
 
 Runs a RegEx replacement to split Roam blocks (default to "-"; can be changed by updating the RegEx string). To access, hold down Ctrl+Right Click to bring up the context menu.
+
+# [shorthand-expander](https://github.com/CFiggers/roam-autohotkey/blob/master/shorthand-expander.ahk)
+
+Implemented for @codexeditor based on this tweet: https://twitter.com/codexeditor/status/1308376716373454848?s=20
+
+![gif example of shorthand-expander](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/shorthand-expander.gif)
+
+Replaces the following: 
+
+* w. = with
+* b.n = between
+* r.n.s = relationships
+* w.in = within
