@@ -15,6 +15,7 @@ If you'd like help adapting any of these or implementing new AHK functionality o
     * [bible-chapter-tagger](#bible-chapter-tagger)
     * [split-at-delimiter](#split-at-delimiter)
     * [shorthand-expander](#shorthand-expander)
+    * [360-delegation](#360-delegation)
 
 # Download AutoHotkey
 To run the scripts in this repo, you'll need to have [AutoHotkey](https://www.autohotkey.com/). See the [AutoHotkey Beginner Tutorial](https://www.autohotkey.com/docs/Tutorial.htm) for detailed steps on how to install and an overview of some basic concepts.
@@ -84,3 +85,15 @@ Replaces the following:
 * b.n = between
 * r.n.s = relationships
 * w.in = within
+
+# [360-delegation](https://github.com/CFiggers/roam-autohotkey/blob/master/360-delegation.ahk)
+
+A template/"mental model" for capturing important delegation information on tasks to be reassigned to someone else. Based off of "360 Delegation" method from this blog post by Tim Francis on Profit Factory : https://profitfactory.com/360delegation/
+
+(Modified slightly from the Profit Factory version to add "Communication" bullet between "Resources" and "Definition of 'Done'".)
+
+Triggers on hotstring "r-360d":
+
+![gif example of 360-delegation](https://github.com/CFiggers/roam-autohotkey/blob/master/gifs/360-delegation.gif)
+
+Immediately after text insert, automatically collapses "Inspiration" bullets to give cleaner, less cluttered visual for starting to write. "Inspiration" bullets can easily be removed once context-specific details are added under each step.
